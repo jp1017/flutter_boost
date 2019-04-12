@@ -64,7 +64,7 @@ class FlutterRouteWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('flutter_boost_example'),
+        title: Text('flutter_boost_page'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

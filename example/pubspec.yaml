@@ -14,7 +14,8 @@ environment:
 
 dependencies:
 
-  xservice_kit: ^0.0.18
+#  flutter_boost: ^0.0.400
+  xservice_kit: ^0.0.26
 
   flutter:
     sdk: flutter

@@ -15,9 +15,11 @@ public class PageRouter {
     }
 
     public static boolean openPageByUrl(Context context, String url, int requestCode) {
+        android.util.Log.d("url: ", "openPageByUrl: " + url);
         try {
-            if (TextUtils.equals(url, FLUTTER_PAGE_URL)) {
-                context.startActivity(new Intent(context, FlutterPageActivity.class));
+            if (TextUtils.equals(url, FLUTTER_PAGE_URL) || !url.contains("sample")) {
+                Intent intent = new Intent(context, FlutterPageActivity.class);
+                context.startActivity(intent);
                 return true;
             } else if (TextUtils.equals(url, FLUTTER_FRAGMENT_PAGE_URL)) {
                 context.startActivity(new Intent(context, FlutterFragmentPageActivity.class));
